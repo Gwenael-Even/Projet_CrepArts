@@ -1,0 +1,1332 @@
+﻿/* Eléments principaux de la page */
+
+body, div, ul, section, aside, footer
+{
+	list-style-type: none;
+	letter-spacing: 1px;
+	margin: 0; padding: 0;
+}
+
+body
+{
+	font-family: "Trebuchet MS", verdana, times, serif;
+	min-width: 1024px;
+	color: white;
+}
+
+#global
+{
+    margin: 0;
+}
+
+textarea
+{
+	resize: none;
+}
+
+textarea:focus
+{
+	outline: 3px solid #AF4646;
+}
+
+h1
+{
+	font-size: 22px;
+	text-align: center;
+}
+
+h2
+{
+	font-size: 18px;
+	text-align: center;
+}
+
+h3
+{
+	font-size: 16px;
+	text-align: center;
+}
+
+input
+{
+	margin-bottom: 10px;
+	padding: 2px 5px;
+}
+
+input:focus
+{
+	outline: 3px solid #AF4646;
+}
+
+a
+{
+	color: #FFB7B7;
+}
+
+.contenue_bdderreur
+{
+	margin: -10px;
+	padding: 0px;
+}
+
+/* PAGE BDD ERREUR */
+
+.contenue_bdderreur 
+{	
+	height: 100%;
+	position: fixed; right: 0px; left: 0px; bottom: 0px;
+	background-color: #3FC380;
+}
+
+.bdderreur 
+{
+	width: 60%;
+	margin-top: 20%; margin-left: auto; margin-right: auto;
+	padding: 20px;
+	text-align: center;
+	border-radius: 20px; border: 2px solid #2F2F2F;
+}
+
+.bdderreur span
+{
+	font-size: 25px;
+	font-family: sans-serif;
+}
+
+.bdderreur a
+{
+	color: #2F2F2F;
+	text-decoration: none;
+}
+
+.bdderreur:hover
+{
+	background-color: #2F2F2F;
+	transition: all 1s;
+}
+
+.bdderreur:hover span
+{
+	transition: all 1.5s;
+	color: #3FC380;
+}
+
+.bdderreur:hover a
+{
+	color: white;
+}
+
+/* ALERTE ERREUR */
+
+.bloc_alert_erreur
+{
+	margin: 10px;
+	padding: 10px 0px;
+	background: #AF4646 url('images/erreur.png') no-repeat 10px 50%;
+    border: 1px solid #f5aca6;
+	text-align: center;
+    font-family: sans-serif;font-size:15px;  
+}
+
+.texte_alert_erreur
+{
+	width: 80%;
+   	margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Header */
+
+header
+{
+	height: 145px;
+}
+
+	/* Menu */
+
+	#bloc_menu
+	{	
+		height: 100px;
+		margin: auto;
+		text-align: center;
+		background-color: #af4646; 
+	}
+
+	nav ul
+	{
+		padding-top: 35px;
+    	display: flex;
+	}
+
+	nav li
+	{
+    	width: 25em;
+	}
+
+	nav a
+	{
+		color: white;
+    	font-size: 0.9em;
+    	text-decoration: none;
+	}
+
+	nav a:hover
+	{
+    	text-decoration: underline;
+	}
+
+	#menu img
+	{
+		margin-top: -34px;
+	}
+
+	/* Sous-menu */
+
+	#sous_tete
+	{
+		height: 45px;
+		opacity: 0.8;
+	    background-color: #af4646;	
+	}
+
+		/* Panier */
+
+		#bloc_panier
+		{
+			width: 270px;
+			margin-top: -20px; margin-left: 1%;
+			display: flex;
+		}
+
+		.lien_bloc
+		{
+			position: absolute;
+			opacity: 0;
+		}
+
+		.texte_panier a
+		{
+			color: white;
+		}
+
+		.image_panier
+		{
+			margin-top: -10px;
+			position: absolute;
+		}
+
+		#bloc_panier .montant_panier
+		{
+			margin-top: -7px; margin-left: 55px;
+			text-align: center
+		}
+
+		.nbproduit_header
+		{
+			clear: both;
+		}
+
+		.ajouter_panier
+		{
+			width: 40%;
+			margin-top: 88px; margin-right: auto; margin-left: auto;
+			padding: 20px;
+			color: white;
+			text-align: center;
+			border-radius: 12px;
+			background-color: #2A6565;
+		}
+
+		/* Echo */
+
+		.echo_sous_tete
+		{
+			padding-top: 12px;
+		}
+
+		.echo_sous_tete .marquee
+		{
+			margin-left: 23%;
+			cursor: pointer;
+		}
+
+/* PAGE "ACCUEIL" */
+
+	/* Section image principale */
+
+	.encadre_img_princ
+	{
+		background-color: #2A6565;
+	}
+
+	.image_accueil
+	{
+		height: 677px; width: 1024px;
+		margin: auto;
+	}
+
+	/* Barre bleu apres image principale */
+
+	.barre_bleu_accueil
+	{
+		height: 40px; min-width: 1024px;
+		background-color: #2A6565;	
+	}
+
+	.barre_bleu_accueil p
+	{
+		margin: 0;
+		opacity: 0;
+	}
+
+	/* Section présentation */
+
+	.presentation
+	{
+		width: 650px;
+		margin: 80px auto;
+		border-radius: 12px;
+		background-color: #2A6565;
+		padding: 20px; 
+		text-align: center;
+	}	
+
+	/* Info accueil */
+
+	.info_accueil
+	{
+		width: 980px;
+		margin-left: auto; margin-right: auto; margin-bottom: 80px;
+		display: flex;
+	}
+
+
+		/* Horaire ouverture */
+
+		.bloc_horaire
+		{
+			width: 400px;
+			padding: 20px;
+			list-style-type: none;
+			border-radius: 12px;
+			background-color: #2A6565;	
+		}
+
+		span.jour
+		{
+			width: 85px;
+	   		display: inline-block;
+	   		margin-bottom: 10px;
+	    }	
+
+		/* Contact */
+
+		.bloc_info_contact
+		{
+			width: 350px;
+			margin-left: 10%;
+			padding: 20px;
+			line-height: 20px;
+			border-radius: 12px;
+			background-color: #2A6565;
+		}
+
+	/* GOOGLE MAPS */
+
+	.googlemaps_titre
+	{
+		height: 50px; width: 100%;
+		line-height: 45px;
+		margin-bottom: 40px;
+		background-color: #af4646;
+	}
+
+	.googlemaps
+	{
+		width: 80%;
+		margin: auto;
+		padding: 50px;
+		border-radius: 25px;
+		background-color: #2A6565;	
+	}
+
+	.googlemaps_iframe
+	{
+		height: 450px; width: 100%;
+		margin: auto;
+	}
+
+/* PAGE "LA CARTE" */
+
+	/* Menu de la carte */
+
+	.menu_carte
+	{
+		width: 700px;
+		margin-left: auto; margin-right: auto; margin-top: 40px;
+	}
+
+	.menu_carte li
+	{
+		height: 40px;
+		padding: 0 10px;
+		display: inline-block;
+		color: white;
+		line-height: 40px;
+		text-align: center;
+	    background-color: #2F2F2F;  
+	}
+
+	.menu_carte li:hover
+	{
+	    background-color: #2A6565;
+	}
+
+	/* Carte */
+
+	.bloc_titre
+	{
+		height: 70px;
+		margin-top: 40px;
+		text-align: center;
+		background-color: #2A6565;
+	}
+
+	.bloc_titre h1
+	{
+		padding-top: 20px;
+	}
+
+	.bloc_titre_boissons
+	{
+		height: 40px; width: 20%;
+		margin-top: 20px;
+		border-radius: 0 12px 12px 0;
+		background-color: #2A6565;
+	}
+
+	.bloc_titre_boissons h2
+	{
+		padding-top: 8px;
+	}
+
+	.bloc_produit
+	{
+		height: 320px;width: 26%;
+		margin-top: 50px; margin-left: 5.5%;
+		display: inline-block;
+		vertical-align: top;
+		border-radius: 12px;
+		background-color: #af4646;
+	}
+
+	.bloc_ajouter_panier
+	{
+		margin-top: 15px; margin-left: 15px;
+		position: absolute;
+	}
+
+	.produit_texte
+	{
+		padding: 15px;
+		text-align: center;
+	}
+
+	.photo_produit, .nom_produit, .compo_produit
+	{
+		margin-bottom: 15px;
+	}
+
+	/* Retour en haut de la page */
+
+	.bouton_retour_haut
+	{
+		height: 55px; width: 57px;
+		position: fixed; left: 0px; bottom: 20px;
+		background-image: url(images/retour_haut.png);
+		background-repeat: no-repeat;
+	}
+
+	.bouton_retour_haut:hover
+	{
+		background: url(images/retour_haut_hover.png);
+		background-repeat: no-repeat;
+		transition: all 0.6s;
+	}
+
+	.bouton_retour_haut a
+	{
+		opacity: 0;
+	}
+
+	/* Asterisque boisson */
+
+	.asterisque_boisson
+	{
+		padding: 5px 20px;
+		border-radius: 12px 0 0 0;
+		float: right;
+		background-color: #2A6565;
+	}
+
+	.asterisque_boisson span
+	{
+		font-size: 20px;
+	}
+
+/* PAGE CIBLE FORMULAIRE */
+
+.bloc_cible_formulaire
+{
+	width: 50%;
+	margin-top: 100px; margin-right: auto; margin-left: auto;
+	padding: 20px;
+	text-align: center;
+	border-radius: 12px;
+	background-color: #2A6565;	
+}
+
+/* PAGE "INSCRIPTION" */
+
+.bloc_formulaire_inscription
+{
+	width: 50%;
+	margin-left: auto; margin-right: auto; margin-top: 80px;
+	padding: 20px;
+	background-color: #2A6565;
+	border-radius: 12px;
+	text-align: center;
+}
+
+/* PAGE "SE CONNECTER" */
+
+	/* BANNIERE COOKIE */
+
+	#cookie-alert 
+	{
+		padding: 10px;
+		display: block;
+	    position: fixed; left: 0px; bottom: 0px; right: 0px;
+	    z-index: 100;
+	    background: #2f2f2f;  
+	}
+
+	#cookie-alert span
+	{
+		color: white;
+	    font-size: 13px;
+	    line-height: 27px
+	}
+
+	#cookie-alert button 
+	{
+		width: 100px;
+		margin: auto;
+		color: #46A2D9;
+	    border-radius: 12px; border: 2px solid #46A2D9;
+	    background: transparent;
+	    transition: all .5s ease;
+	}
+
+	#cookie-alert button:hover
+	{
+		color: #2f2f2f;
+		background: #46A2D9;
+	}
+
+.formulaire_connection
+{
+	width: 50%;
+	margin-left: auto; margin-right: auto; margin-top: 80px;
+	padding: 20px;
+	background-color: #2A6565;
+	border-radius: 12px;
+	text-align: center;
+}
+
+.connection
+{
+	line-height: 30px;
+}
+
+/* PAGE "MON COMPTE" */
+
+.bloc_compte_vide
+{
+	width: 50%;
+	margin-left: auto; margin-right: auto; margin-top: 40px;
+	padding: 20px;
+	border-radius: 12px;
+	background-color: #2A6565;
+	text-align: center;
+}
+
+	/* Progress bar */
+
+	.progress_compte
+	{
+		width: 700px;
+		margin-left: auto; margin-right: auto; margin-top: 40px;
+	}
+
+	.liste_progress li
+	{
+		height: 40px;
+		line-height: 40px; 
+		text-align: center;   
+	    background-color: #2F2F2F;
+	    border-right: 1px solid rgba(0,0,0,0.1);
+	}
+
+	.liste_progress li.courant
+	{
+		background-color: #2A6565;
+	}
+
+	/* PAGE INFORMATION */
+
+	.formulaire_mon_compte
+	{
+		width: 50%;
+		margin-left: auto; margin-right: auto; margin-top: 40px;
+		padding: 20px;
+		border-radius: 12px;
+		background-color: #2A6565;
+	}
+
+	.formulaire_mon_compte p
+	{
+		text-align: center;
+	}
+
+	.modifemail
+	{
+		width: 340px;
+		margin: auto;
+	}
+
+	.modifemail label
+	{
+		width: 125px;
+		display: block;
+		float: left;
+	}
+
+	.modifmdp
+	{
+		width: 445px;
+		margin: auto;
+	}
+
+	.modifmdp label
+	{
+		width: 255px;
+		display: block;
+		float: left;
+	}
+
+	.bouton_modifier
+	{
+		width: 100px;
+		margin-right: auto; margin-left: auto;
+		margin-top: 10px;
+	}
+
+	/* PAGE COORDONNES */
+
+	.bloc_formulaire_coordonnes
+	{
+		width: 60%;
+		margin-left: auto; margin-right: auto; margin-top: 40px;
+		padding: 20px;
+		border-radius: 12px;
+		background-color: #2A6565;	
+	}
+
+	.modif_coordonnes label
+	{
+		width: 250px;
+		margin-right: auto; margin-left: auto;
+		display: block;
+		float: left;
+	}
+
+	.modif_coordonnes
+	{
+		width: 465px;
+		margin: auto;
+	}
+
+	.bouton_modif_coordonnes
+	{
+		width: 100px;
+		margin-right: auto; margin-left: auto; margin-top: 20px;
+	}
+
+	/* PAGE COMMANDE */
+
+	.bloc_compte_commande
+	{
+		width: 60%;
+		margin-left: auto; margin-right: auto; margin-top: 40px;
+		padding: 20px;
+		border-radius: 12px;
+		background-color: #2A6565;
+		text-align: center;
+	}
+
+	/* PAGE RESERVATION */
+
+	.bloc_compte_reservation
+	{
+		width: 60%;
+		margin-left: auto; margin-right: auto; margin-top: 40px;
+		padding: 20px;
+		border-radius: 12px;
+		background-color: #2A6565;	
+	}
+
+/* ENSEMBLE PAGE PANIER */
+
+	/* Progress panier */
+
+	.bloc_progress
+	{
+		display: flex;
+		width: 600px;
+		margin: auto;
+	}
+
+	.progress_panier
+	{
+		width: 600px;
+		margin-left: auto; margin-right: auto; margin-top: 40px;
+	}
+
+	/* Bouton retour en arrière */
+
+	.bouton_retour_progress
+	{
+		height: 65px;
+		margin-top: 65px; margin-left: 60px;
+		float: left;
+		background-image: url(images/retour_progress.png);
+		background-repeat: no-repeat;
+	}
+
+	.bouton_retour_progress:hover
+	{
+		background: url(images/retour_progress_hover.png);
+		background-repeat: no-repeat;
+		transition: all 0.6s;
+	}
+
+	.bouton_retour_progress a
+	{
+		opacity: 0;
+	}
+
+	/*PAGE MON PANIER */
+
+	#tableau_panier
+	{
+		width: 90%;
+		margin: auto;
+	}
+
+	#tableau_panier table
+	{
+		width: 100%;
+		display: table;
+	    border-spacing: 2px; border-color: #2F2F2F; border-collapse: collapse; border-spacing: 0;
+	    background: white;
+	}
+
+	#tableau_panier thead
+	{
+		display: table-header-group;
+	    vertical-align: middle;
+	    background: #2A6565;
+    	color: white;
+	}
+
+	#tableau_panier tr
+	{
+		display: table-row;
+		border: 1px solid #2F2F2F;  
+	    vertical-align: inherit;
+	}
+
+	#tableau_panier th
+	{
+		padding: 5px;
+		border: 1px solid #2F2F2F;
+	    vertical-align: middle;
+	}
+
+	#tableau_panier tbody
+	{
+		color: black;
+	}
+
+	#tableau_panier tbody .image_produit img
+	{
+		width: 64px;
+	}
+
+	#tableau_panier .panier_quantite_lien
+	{
+		min-width: 100px;
+		padding-left: 10px;
+		background-image: url(images/poubelle_panier.png); background-repeat: no-repeat; background-position: 21% 4px;
+	}
+
+	#tableau_panier .panier_quantite_lien:hover
+	{
+		background-image: url(images/poubelle_panier_hover.png); background-repeat: no-repeat;
+	}
+
+	#tableau_panier .panier_quantite
+	{
+		min-width: 100px;
+		padding-left: 10px;
+		background-image: url(images/poubelle_panier.png); background-repeat: no-repeat; background-position: 70% 25px;
+	}
+
+	#tableau_panier .panier_quantite a
+	{
+		position: absolute;
+		opacity: 0;
+	}
+
+	#tableau_panier .panier_quantite:hover
+	{
+		background-image: url(images/poubelle_panier_hover.png); background-repeat: no-repeat;
+	}
+
+	.bouton_panier
+	{
+		width: 90%;
+		margin-left: auto; margin-right: auto; margin-top: 10px;
+		display: flex;
+	}
+
+	.bouton_panier_poursuivre
+	{
+		height: 40px; width: 21%;
+	    background: #2F2F2F;
+	}
+
+	.bouton_panier_poursuivre:hover
+	{
+		border-radius: 12px;
+		background: #af4646;
+	    transition: all 0.6s;
+	}
+
+	.bouton_panier_poursuivre a
+	{
+		height: 40px;
+		display: block;
+		color: white;
+		line-height: 40px;
+		text-decoration: none;    
+	    text-align: center;   
+	}
+
+	.bouton_panier_continuer
+	{
+		height: 40px; width: 23%;
+		margin-left: 56%;
+	    background: #2F2F2F;
+	}
+
+	.bouton_panier_continuer:hover
+	{
+		border-radius: 12px;
+		background: #af4646;
+	    transition: all 0.6s;
+	}
+
+	.bouton_panier_continuer a
+	{
+		height: 40px;
+		display: block;
+		color: white;
+		line-height: 40px;
+		text-decoration: none;    
+	    text-align: center; 
+	}
+
+	/* PAGE LIVRAISON */
+
+	.bloc_panier_livraison_choix
+	{
+		width: 944px;
+		margin: 40px auto;
+		display: flex;
+	}
+
+	.bloc_panier_livraison_actu
+	{
+		width: 350px;
+		padding: 20px;
+		border-radius: 12px;
+		background-color: #2A6565;	
+	}
+
+	.bloc_panier_livraison_actu span
+	{
+		display: block;
+		line-height: 30px;
+	}
+
+	.bouton_panier_livraison_continuer
+	{
+		height: 30px; width: 180px;
+		margin-top: 24px; margin-right: auto; margin-left: auto;
+	    background: #2F2F2F;
+	}
+
+	.bouton_panier_livraison_continuer:hover
+	{
+		border-radius: 12px;
+		background: #af4646;    
+	    transition: all 0.6s;
+	}
+
+	.bouton_panier_livraison_continuer a
+	{
+		height: 40px;
+		display: block;
+		color: white;
+		line-height: 30px;
+		font-size: 13px;
+		text-align: center; text-decoration: none;	    
+	}
+
+	.bloc_panier_livraison_autre
+	{
+		width: 460px;
+		margin-left: 5%;
+		padding: 20px;
+		border-radius: 12px;
+		background-color: #2A6565;
+	}
+
+	.bloc_panier_livraison_autre label
+	{
+		width: 237px;
+		display: block;
+		float: left;
+	}
+
+	.bouton_modif_adresse
+	{
+		width: 150px;
+		margin-top: 17px; margin-right: auto; margin-left: auto;
+	}
+
+	/* PAGE PAIEMENT */
+
+	.bloc_paiement_texte
+	{
+		width: 70%;
+		margin: 40px auto;
+		padding: 20px;
+		border-radius: 12px;
+		background-color: #2A6565;
+		text-align: center;
+	}
+
+	.bloc_paiement_choix
+	{
+		width: 560px;
+		margin: auto;
+		display: flex;
+	}
+
+	.bloc_paiement_CB, .bloc_paiement_visa, .bloc_paiement_mastercard, .bloc_paiement_paypal
+	{
+		width: 150px;
+	}
+
+	/* PAGE CONFIRMATION */
+
+	.bloc_panier_confirmation_adresse
+	{
+		width: 50%;
+		margin: 40px auto;
+		padding: 20px;
+		color: white;
+		border-radius: 12px;
+		background-color: #2A6565;
+	}
+
+	.bloc_panier_confirmation_adresse_texte
+	{
+		width: 400px;
+		margin: auto;
+	}
+
+	.confirmation_span
+	{
+		width: 105px;
+		display: block;
+		float: left;
+	}
+
+	#tableau_confirmation table
+	{
+		width: 80%;
+		margin: auto;
+		display: table;
+	    border-spacing: 2px; border-color: #2F2F2F; border-collapse: collapse;
+	    background-color: white;
+	}
+
+	#tableau_confirmation thead
+	{
+		color: white;
+		display: table-header-group;
+	    vertical-align: middle;
+	    background: #2A6565;
+	}
+
+	#tableau_confirmation tr
+	{
+		display: table-row;
+	    vertical-align: inherit;
+	    border: 1px solid #2F2F2F;
+	}
+
+	#tableau_confirmation th
+	{
+		padding: 5px;
+		border: 1px solid #2F2F2F;
+	    vertical-align: middle;
+	}
+
+	.prix_total_tout
+	{
+		margin-top: 40px; margin-right: 180px;
+		padding: 10px;
+		color: black;
+		font-size: 18px;
+		float: right;
+		border-radius: 12px; border: solid 1px black;	
+	}
+
+	.bouton_panier_confirmation
+	{
+		height: 40px; width: 220px;
+		margin-top: 80px; margin-right: auto; margin-left: auto;
+	    background: #2F2F2F;
+	}
+
+	.bouton_panier_confirmation:hover
+	{
+		border-radius: 12px;
+		background: #af4646;   
+	    transition: all 0.6s;
+	}
+
+	.bouton_panier_confirmation a
+	{
+		height: 40px;
+		display: block;
+		color: white;
+		text-decoration: none; text-align: center;
+	    line-height: 40px;	    
+	}
+
+/* PAGE NOS VALEURS */
+
+.bloc_nos_valeurs
+{
+	width: 60%;
+	margin-top: 80px; margin-left: auto; margin-right: auto;
+	padding: 20px;
+	text-align: center;
+	border-radius: 12px;
+	background-color: #2A6565;
+}
+
+/* PAGE RESERVATION */
+
+.bloc_formulaire_reservation
+{
+	width: 50%;
+	margin-top: 80px; margin-left: auto; margin-right: auto;
+	padding: 20px;
+	border-radius: 12px;
+	background-color: #2A6565;
+}
+
+.bloc_formulaire_reservation p
+{
+	text-align: center;
+}
+
+.centrage_formulaire_reservation
+{
+	width: 365px;
+	margin: auto;
+}
+
+.formulaire_reservation label
+{
+	width: 180px;
+	display: block;
+	float: left;
+}
+
+.bouton_reservation
+{	
+	width: 100px;
+	margin-top: 15px; margin-right: auto; margin-left: auto;
+}
+
+/* Page Contact */
+
+.bloc_formulaire_contact
+{
+	width: 50%;
+	margin-top: 80px; margin-right: auto; margin-left: auto;
+	padding: 20px;
+	border-radius: 12px;
+	background-color: #2A6565;
+}
+
+.formulaire_contact
+{
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+.bloc_formulaire_contact_coord
+{
+	width: 345px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.bloc_formulaire_contact_coord label
+{
+	float: left;
+	display: block;
+	width: 130px;
+}
+
+.bloc_formulaire_contact_message label
+{
+	display: block;
+}
+
+.bloc_formulaire_contact_message textarea
+{
+	height: 130px; width: 100%;
+	margin-top: 10px; margin-left: auto; margin-right: auto;
+}
+
+.bouton_formulaire_contact
+{
+	width: 100px;
+	margin-top: 15px; margin-right: auto; margin-left: auto;
+}
+
+/* Changement apparence */
+
+	input:-webkit-autofill
+	{
+    	-webkit-box-shadow: 0 0 0 1000px white inset;
+	}
+
+	/* Bouton */
+
+	input[type = "submit"].bouton_css
+	{
+		height: 30px; width: 100px;
+		color: white;
+		box-shadow: none;
+	    outline: none;
+		border: 0 none;
+	    background: #2F2F2F;
+	    transition: all 0.6s;   
+	}
+
+	input[type = "submit"].bouton_css:hover
+	{
+		border-radius: 12px;
+		background: #af4646;
+	    transition: all 0.6s;
+	}
+
+	input[type = "submit"].bouton_css_panier_livraison
+	{
+		height: 30px; width: 150px;
+		color: white;
+		box-shadow: none;
+	    outline: none;
+		border: 0 none;
+	    background: #2F2F2F;
+	    transition: all 0.6s;    
+	}
+
+	input[type = "submit"].bouton_css_panier_livraison:hover
+	{
+		border-radius: 12px;
+		background: #af4646;
+	    transition: all 0.6s;
+	}
+
+	/* Logo formulaire */
+
+	.input_login
+	{
+		background-color: white; background-image: url("images/logo_form/email_logo_form.png"); background-repeat: no-repeat;
+		background-position: 1px 4px; background-size: 14px;
+		padding-left: 18px;
+	}
+
+	.input_pass
+	{
+		background-image: url("images/logo_form/pass_logo_form.png"); background-repeat: no-repeat;
+		background-position: 1px 2px; background-size: 14px;
+		padding-left: 18px;
+	}
+
+/* FOOTER */
+
+.barre_bleu_footer
+{
+	height: 80px;
+	margin-top: 60px;
+	background-color: #2A6565;
+}
+
+.barre_bleu_footer p
+{
+	opacity: 0;
+}
+
+.pied
+{
+	padding: 20px;
+	background-color: #af4646;
+}
+
+	/* Rester en contact */
+
+	.rester_contact
+	{
+		color: white;
+		text-align: center;
+	}
+
+	.liste_lien_contact
+	{
+		width: 270px;
+		margin: auto;
+		display: flex;
+	}
+
+	.bouton_contacter
+	{
+		height: 37px; width: 150px;
+		margin-top: -4px; margin-right: 20px; margin-left: 20px;
+		border: 3px solid; border-color: #2F2F2F; border-radius: 20px;	
+		transition: all 1s;
+	}
+
+	.bouton_contacter a
+	{
+		margin-left: -60px;
+	    padding-top: 6.5px;
+		position: absolute;
+		color: white;
+		text-decoration: none;
+	}
+
+	.bouton_contacter:hover
+	{
+		border-radius: 20px;
+		background: #2F2F2F;
+		transition: all 1s;
+	}
+
+	/* Manger bouger */
+
+	.manger_bouger
+	{
+		width: 85%;
+		margin-top: 15px; margin-left: auto; margin-right: auto;
+		border-top: 1px solid black;	
+	}
+
+	.manger_bouger p
+	{
+		color: black;
+		text-align: center;	
+		text-decoration: none;
+	}
+
+	.manger_bouger a
+	{
+		color: white;
+	}
+
+	/* Copyright */
+
+	.copyright
+	{
+		width: 70%;
+		margin-left: auto; margin-right: auto; margin-top: 15px;
+		border-top: 1px solid black;
+	}
+
+	.copyright p
+	{
+		text-align: center;
+	}
+
+	/* Source */
+
+	.footer_source
+	{
+		width: 55%;
+		margin-left: auto; margin-right: auto; margin-top: 15px;
+		border-top: 1px solid black;
+	}
+
+	.footer_source_centrage
+	{
+		width: 330px;
+		margin: auto;
+		display: flex;
+	}
+
+	.footer_source_design
+	{
+		margin-right: 20%;
+	}
+
+	.footer_source_design span, .footer_remerciement span
+	{
+		line-height: 30px;
+	}
+
+	.footer_source_design, .footer_remerciement
+	{
+		width: 130px;
+		margin-top: 20px;
+		display: block;
+	}
+
+	.footer_source_design a, .footer_remerciement a
+	{
+		color : white;
+	}
